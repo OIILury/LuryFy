@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuryFy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,9 +18,34 @@
         </section>
 
         <section id="stats-section" class="hidden">
-            <h2>Vos statistiques Spotify</h2>
-            <div id="stats-container">
-                <!-- Les données de l'API seront injectées ici -->
+            <div id="user-card" class="card">
+                <img id="user-image" src="" alt="Photo de profil" />
+                <h2 id="user-name">Nom d'utilisateur</h2>
+            </div>
+
+            <div id="listening-stats" class="stats">
+                <h3>Statistiques d'écoute</h3>
+                <p><strong>Minutes écoutées :</strong> <span id="total-minutes">0</span></p>
+            </div>
+
+            <div id="top-stats" class="stats">
+                <h3>Top 5 Spotify</h3>
+                <div>
+                    <h4>Artistes</h4>
+                    <ul id="top-artists"></ul>
+                </div>
+                <div>
+                    <h4>Morceaux</h4>
+                    <ul id="top-tracks"></ul>
+                </div>
+                <div>
+                    <h4>Albums</h4>
+                    <ul id="top-albums"></ul>
+                </div>
+                <div>
+                    <h4>Genre musical dominant</h4>
+                    <p id="top-genre">Non disponible</p>
+                </div>
             </div>
         </section>
     </main>
